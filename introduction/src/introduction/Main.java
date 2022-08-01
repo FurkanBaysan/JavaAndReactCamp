@@ -30,7 +30,7 @@ public class Main {
 
 		System.out.println("\t" + "Array Need");
 
-		String firstKredi = "Hýzli Kredi";
+		String firstKredi = "Hizli Kredi";
 		String secondKredi = "Mutlu Emekli Kredisi";
 		String thirdKredi = "Konut Kredisi";
 		String fourthKredi = "Ihtiyac Kredisi";
