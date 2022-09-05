@@ -40,13 +40,11 @@ public class Main {
 		SendikaCustomer sendikaCustomer = new SendikaCustomer();
 		sendikaCustomer.customerNumber = "9999";
 		customerManager.add(sendikaCustomer);
-		
+
 		System.out.println();
 
 		Customer[] customers = { individualCustomer, corporateCustomer, sendikaCustomer };
 		customerManager.addMultiple(customers);
-		
-		
 
 	}
 
