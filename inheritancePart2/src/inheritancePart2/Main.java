@@ -37,7 +37,6 @@ public class Main {
 		// Second Way
 		CustomerManager manager = new CustomerManager(thirdLogger);
 		manager.add(corporateCustomer);
-
 	}
 
 }
