@@ -45,7 +45,6 @@ public class Main {
 
 		Customer[] customers = { individualCustomer, corporateCustomer, sendikaCustomer };
 		customerManager.addMultiple(customers);
-
 	}
 
 }
