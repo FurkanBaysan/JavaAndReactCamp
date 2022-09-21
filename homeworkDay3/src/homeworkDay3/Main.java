@@ -7,26 +7,28 @@ public class Main {
 		Student secondStudent = new Student(2, "456", "Anil", "Toprak", "aniltoprak@gmail.com", 8888);
 
 		Instructor firstInstructor = new Instructor(1, "3535", "Furkan", "Baysan",
-				"yazilimkonseptlerisorucevap@gmail.com");
+				"yazilimkonseptlerisorucevap@gmail.com", "Java Certified Instructor");
 
-		Instructor secondInstructor = new Instructor(2, "8787", "Velihan", "Gozek", "velihangozek@hotmail.com");
-
-		firstInstructor.setDetails("Java Certified Instructor");
-		secondInstructor.setDetails("C# Certified Instructor");
+		Instructor secondInstructor = new Instructor(2, "8787", "Velihan", "Gozek", "velihangozek@hotmail.com",
+				"C# Certified Instructor");
 
 		User[] instructorUsers = { firstInstructor, secondInstructor };
 
 		for (User user : instructorUsers) {
-			System.out.println("Instructor" + user.id + " : " + user.firstName + " " + user.lastName + " " + user.email);
+			System.out.println("Instructor" + user.getId() + " : " + user.getFirstName() + " " + user.getLastName()
+					+ " " + user.getEmail());
 		}
 
 		System.out.println(firstInstructor.getDetails());
 		System.out.println(secondInstructor.getDetails());
 
+		System.out.println();
+
 		User[] studentUsers = { firstStudent, secondStudent };
 
 		for (User user : studentUsers) {
-			System.out.println("Student" + user.id + ":" + " " + user.firstName + " " + user.lastName + " " + user.email);
+			System.out.println("Student" + user.getId() + ":" + " " + user.getFirstName() + " " + user.getLastName()
+					+ " " + user.getEmail());
 		}
 
 		System.out.println(firstStudent.getStudentNumber());
@@ -35,7 +37,7 @@ public class Main {
 		System.out.println();
 
 		Course course = new Course();
-		course.numberOfVideos = 80;
+		course.setNumberOfVideos(100);
 		firstStudent.setNumberOfVideosWatched(50);
 		System.out.println("Course Completion Rate: " + firstStudent.getCourseCompletionRate(course));
 

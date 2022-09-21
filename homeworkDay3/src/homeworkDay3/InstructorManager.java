@@ -4,7 +4,7 @@ public class InstructorManager extends UserManager {
 
 	@Override
 	public void add(User user) {
-		System.out.println("Instructor added to the database: " + user.firstName + " " + user.lastName);
+		System.out.println("Instructor added to the database: " + user.getFirstName() + " " + user.getLastName());
 	}
 
 	@Override
@@ -16,11 +16,11 @@ public class InstructorManager extends UserManager {
 
 	@Override
 	public void remove(User user) {
-		System.out.println("Instructor removed from the database: " + user.firstName + " " + user.lastName);
+		System.out.println("Instructor removed from the database: " + user.getFirstName() + " " + user.getLastName());
 	}
 
 	@Override
 	public void update(User user) {
-		System.out.println("Instructor updated in the database: " + user.firstName + " " + user.lastName);
+		System.out.println("Instructor updated in the database: " + user.getFirstName() + " " + user.getLastName());
 	}
 }

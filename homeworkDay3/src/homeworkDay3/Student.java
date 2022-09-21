@@ -11,19 +11,8 @@ public class Student extends User {
 
 	}
 
-	public Student(int id, String password, String firstName, String lastName) {
-		this.id = id;
-		this.password = password;
-		this.firstName = firstName;
-		this.lastName = lastName;
-	}
-
 	public Student(int id, String password, String firstName, String lastName, String email, int studentNumber) {
-		this.id = id;
-		this.password = password;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.email = email;
+		super(id, password, firstName, lastName, email);
 		this.studentNumber = studentNumber;
 	}
 
@@ -40,7 +29,7 @@ public class Student extends User {
 	}
 
 	public String getCourseCompletionRate(Course course) {
-		this.courseCompletionRate = (this.numberOfVideosWatched / course.numberOfVideos);
+		this.courseCompletionRate = (this.numberOfVideosWatched / course.getNumberOfVideos());
 		DecimalFormat decimalFormat = new DecimalFormat("#%");
 		return decimalFormat.format(this.courseCompletionRate);
 		// return this.courseCompletionRate;

@@ -8,12 +8,11 @@ public class Instructor extends User {
 
 	}
 
-	public Instructor(int id, String password, String instructorFirstName, String instructorLastName, String email) {
-		this.id = id;
-		this.password = password;
-		this.firstName = instructorFirstName;
-		this.lastName = instructorLastName;
-		this.email = email;
+	public Instructor(int id, String password, String instructorFirstName, String instructorLastName, String email,
+			String details) {
+
+		super(id, password, instructorFirstName, instructorLastName, email);
+		this.details = details;
 	}
 
 	public String getDetails() {
