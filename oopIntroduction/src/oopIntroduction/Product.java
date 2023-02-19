@@ -18,7 +18,7 @@ public class Product {
 	public Category category;
 
 	public Product() {
-		// System.out.println("I Worked");
+		// System.out.println("I Worked"); 
 	}
 
 	public Product(long id, String brand, String model, double unitPrice, double discountRate) {
