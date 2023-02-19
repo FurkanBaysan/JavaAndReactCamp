@@ -17,7 +17,7 @@ public class Main {
 		System.out.println("\t" + "Class, object, attribute and behaivor");
 
 		Product firstProduct = new Product();
-		 //firstProduct.id = 1;
+		// firstProduct.id = 1;
 		firstProduct.setId(1);
 		// firstProduct.brand = "Huawei";
 		firstProduct.setBrand("Huawei");
@@ -85,31 +85,25 @@ public class Main {
 		// fifthProduct.id = 5; => Compile-Time Error
 		fifthProduct.setId(5);
 		// fifthProduct.brand = "Lenovo"; => Compile-Time Error
-		fifthProduct.setBrand("Lenovo");
+		fifthProduct.setBrand("Huawei");
 		// fifthProduct.unitPrice=50000;
 		fifthProduct.setUnitPrice(50000);
 		// fifthProduct.discountRate=10;
 		fifthProduct.setDiscountRate(10);
 		System.out.println(fifthProduct.getCode());
 		System.out.println(fifthProduct.getUnitPriceAfterDiscount());
-		
+
 		Category firstCategory = new Category();
 		firstCategory.setId(1);
 		firstCategory.setName("Elektronik");
 
-		Category secondCategory = new Category(2,"Moda");
-		//secondCategory.setId(2);
-		//secondCategory.setName("Moda");
-		
+		Category secondCategory = new Category(2, "Moda");
+		// secondCategory.setId(2);
+		// secondCategory.setName("Moda");
+
 		System.out.println(firstCategory.getName());
 		System.out.println(secondCategory.getName());
-		
-		
-		
-		
-		
-		
-		
+
 	}
 
 }

@@ -12,7 +12,7 @@ public class Product {
 	private double unitPrice;
 	public int stockAmount;
 	public String description;
-	public Image image;
+	public String image;
 	private double discountRate;
 	private double unitPriceAfterDiscount;
 	public Category category;
@@ -21,15 +21,14 @@ public class Product {
 		// System.out.println("I Worked");
 	}
 
-	public Product(long id, String brand, String model, 
-			double unitPrice, double discountRate) {
+	public Product(long id, String brand, String model, double unitPrice, double discountRate) {
 		// this();
 		this.id = id;
 		this.brand = brand;
 		this.model = model;
 		this.unitPrice = unitPrice;
 		this.discountRate = discountRate;
-		
+
 	}
 
 	public long getId() {
@@ -92,11 +91,11 @@ public class Product {
 		this.description = description;
 	}
 
-	public Image getImage() {
+	public String getImage() {
 		return image;
 	}
 
-	public void setImage(Image image) {
+	public void setImage(String image) {
 		this.image = image;
 	}
 
@@ -117,20 +116,9 @@ public class Product {
 	}
 
 	public double getUnitPriceAfterDiscount() {
-		this.unitPriceAfterDiscount = this.unitPrice - 
-				(this.unitPrice * this.discountRate / 100);
+		this.unitPriceAfterDiscount = this.unitPrice - (this.unitPrice * this.discountRate / 100);
 
 		return this.unitPriceAfterDiscount;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }
