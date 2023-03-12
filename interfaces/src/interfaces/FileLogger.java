@@ -2,10 +2,9 @@ package interfaces;
 
 public class FileLogger implements Logger {
 
-	@Override
-	public void log(String message) {
-		System.out.println("Dosyaya loglandý: " + message);
-
-	}
+    @Override
+    public void log(String message) {
+        System.out.println("Dosyaya loglandï¿½: " + message);
+    }
 
 }
