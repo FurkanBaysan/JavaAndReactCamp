@@ -8,7 +8,7 @@ public class CustomerManager {
 //		this.logger = logger;
 //	}
 
-    public CustomerManager(Logger[] loggers) {
+    public CustomerManager(Logger[] loggers) { // Dependency Injection
         this.loggers = loggers;
     }
 
